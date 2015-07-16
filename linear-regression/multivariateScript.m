@@ -56,9 +56,6 @@ fprintf('\n');
 
 % TODO: Estimate the price of a 1650 sq-ft, 3 br house
 
-fprintf(['Predicted price of a 1650 sq-ft, 3 br house ' ...
-         '(using gradient descent):\n $%f\n'], price);
-
 fprintf('Program paused. Press enter to continue.\n');
 pause;
 
@@ -89,6 +86,4 @@ fprintf('\n');
 
 % ============================================================
 
-fprintf(['Predicted price of a 1650 sq-ft, 3 br house ' ...
-         '(using normal equations):\n $%f\n'], price);
 
