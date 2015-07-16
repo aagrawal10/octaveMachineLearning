@@ -55,7 +55,8 @@ fprintf(' %f \n', theta);
 fprintf('\n');
 
 % Estimate the price of a 1650 sq-ft, 3 br house
-price = computeCost(X,y,theta);
+featureVector = [ones(1), (([1650, 3] - mu) ./ sigma)];
+price = computePrice(featureVector',theta);
 fprintf(' Estimated price %f \n', price);
 fprintf('Program paused. Press enter to continue.\n');
 pause;
@@ -83,7 +84,7 @@ fprintf('\n');
 
 
 % Estimate the price of a 1650 sq-ft, 3 br house
-price = computeCost(X,y,theta);
+price = computePrice([1;1650; 3],theta);
 fprintf(' Estimated price %f \n', price);
 
 % ============================================================
